@@ -6,44 +6,41 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export const Header = () => {
-    const [title, setTitle] = useState('About me');
+  const [title, setTitle] = useState("About me");
+  const [drawer, setDrawer] = useState(false);
   const currentPath = usePathname();
 
-useEffect(() => {
+  useEffect(() => {
     setTitle(document.title);
-}, [currentPath]);
+    setDrawer(false);
+  }, [currentPath]);
 
   return (
     <nav className="flex items-center gap-6 justify-start md:justify-center bg-primary py-2 sm:py-4 px-6">
-      <button className="sm:hidden">
-      <MdMenu size={24}/>
+      <button className="sm:hidden" onClick={() => setDrawer(true)}>
+        <MdMenu size={24} />
       </button>
-      <h1 className="sm:hidden">
-        {title}
-      </h1>
-      <ul className="flex gap-6">
-        <li className="hidden sm:block">
-          <Link
-            href="/"
-            data-active={currentPath === "/"}
-            className="data-[active=true]:underline"
-          >
-            About me
-          </Link>
+
+      <h1 className="sm:hidden">{title}</h1>
+
+      <ul className="flex gap-6 items-center" tabIndex={drawer ? -1 : undefined}>
+        <li
+          data-active={currentPath === "/"}
+          className="hidden sm:block data-[active=true]:bg-background px-4 py-1 rounded"
+        >
+          <Link href="/">About me</Link>
         </li>
-        <li className="hidden sm:block">
-          <Link
-            href="/project"
-            data-active={currentPath === "/project"}
-            className="data-[active=true]:underline"
-          >
-            Projects
-          </Link>
+        <li
+          data-active={currentPath === "/project"}
+          className="hidden sm:block data-[active=true]:bg-background px-4 py-1 rounded"
+        >
+          <Link href="/project">Projects</Link>
         </li>
-        <li className="hidden sm:block">
-          <Link href="/contact" 
+        <li
           data-active={currentPath === "/contact"}
-          className="flex gap-1 items-center data-[active=true]:underline">
+          className=" hidden sm:block data-[active=true]:bg-background px-4 py-1 rounded"
+        >
+          <Link href="/contact" className="flex gap-1 items-center">
             Contact
             <MdOutlineMailOutline />
           </Link>
@@ -59,6 +56,40 @@ useEffect(() => {
           </Link>
         </li>
       </ul>
+
+      <div
+        data-open={drawer}
+        tabIndex={drawer ? undefined : -1}
+        onClick={() => setDrawer(false)}
+        className=" bg-gradient-to-r from-background fixed top-0 left-0 bottom-0 right-0 transition-transform data-[open=false]:-translate-x-full"
+      >
+        <ul
+          className="flex gap-6 flex-col p-4 w-60 h-full bg-background"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <li
+            data-active={currentPath === "/"}
+            className="data-[active=true]:border-b-2"
+          >
+            <Link href="/">About me</Link>
+          </li>
+          <li
+            data-active={currentPath === "/project"}
+            className="data-[active=true]:border-b-2"
+          >
+            <Link href="/project">Projects</Link>
+          </li>
+          <li
+            data-active={currentPath === "/contact"}
+            className="data-[active=true]:border-b-2"
+          >
+            <Link href="/contact" className="flex gap-1 items-center">
+              Contact
+              <MdOutlineMailOutline />
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
