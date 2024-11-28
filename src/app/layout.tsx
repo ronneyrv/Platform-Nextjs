@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Ronney's Portfolio",
-  description: "Neste portfólio você irá conhecer um pouco mais sobre o Ronney, um programador Full Stack em desenvolvimento.",
+  description: "Neste portfólio você irá conhecer um pouco mais sobre o Dev Ronney, um programador Full Stack em desenvolvimento.",
 };
 
 export default function RootLayout({
