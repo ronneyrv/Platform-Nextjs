@@ -19,7 +19,7 @@ export const Project = ({title, description, image, href}:IProjectProps) => {
         width={400}
         height={400}
         draggable={false}
-        className="aspect-auto rounded"
+        className="aspect-auto w-full rounded"
       />
       <h4 className="font-extrabold text-lg">
             {title}
