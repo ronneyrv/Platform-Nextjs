@@ -8,7 +8,7 @@ export const Section = () => {
       <ul className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         <li>
           <Project
-            href="/project/qualquer"
+            href="/project/gerenciador-de-tarefas"
             title="Gerenciador de Tarefas"
             image="/images/gerenciador-tarefa.png"
             description="O Gerenciador de Tarefas é uma aplicação web desenvolvida para organizar
