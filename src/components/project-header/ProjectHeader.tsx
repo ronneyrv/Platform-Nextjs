@@ -38,7 +38,7 @@ export const ProjectHeader = () => {
 
   return (
     <>
-        <div className="block sm:hidden">
+        <div className="block pt-10 sm:hidden">
         <Slider settings={settings2}>
           <SwiperSlide >
             <Image
@@ -83,7 +83,7 @@ export const ProjectHeader = () => {
         </Slider>
         </div>
         
-        <div className="hidden sm:block">
+        <div className="hidden sm:block pt-20">
         <Slider settings={settings}>
           <SwiperSlide>
             <Image

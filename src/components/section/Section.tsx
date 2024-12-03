@@ -2,7 +2,7 @@ import { Project } from "@/components/card/Project";
 
 export const Section = () => {
   return (
-    <section className="flex-col gap-4 px-4">
+    <section className="flex-col gap-4 px-4 pt-11 sm:pt-20">
       <h2 className="font-bold text-xl">My Projects</h2>
 
       <ul className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">

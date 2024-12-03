@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function PageContact() {
   return (
-    <div className="flex-col h-max">
+    <div className="flex-col pt-14 sm:pt-24 h-max">
       <Link href={"https://github.com/ronneyrv"} target="blank" className="flex justify-center">
         <article className="flex gap-2 flex-row items-center justify-center p-2 m-3 rounded hover:bg-primary w-full">
           <IoLogoGithub className="size-10" />

@@ -61,14 +61,15 @@ export const Header = () => {
         </li>
       </ul>
 
+
       <div
         data-open={drawer}
         tabIndex={drawer ? undefined : -1}
         onClick={() => setDrawer(false)}
-        className="sm:hidden bg-gradient-to-r from-background fixed top-0 left-0 bottom-0 right-0 transition-transform data-[open=false]:-translate-x-full"
+        className="sm:hidden bg-gradient-to-r from-background fixed top-0 left-0 bottom-0 transition-transform data-[open=false]:-translate-x-full h-14 sm:h-20"
       >
         <ul
-          className="flex gap-6 flex-col p-4 w-60 h-full bg-background"
+          className="flex gap-6 flex-col p-4 z-50 w-60 bg-background h-screen"
           onClick={(e) => e.stopPropagation()}
         >
           <li
@@ -95,7 +96,7 @@ export const Header = () => {
         </ul>
       </div>
     </nav>
-    <div className="h-14 sm:h-20"/>
+    <div/>
     </>
   );
 };
