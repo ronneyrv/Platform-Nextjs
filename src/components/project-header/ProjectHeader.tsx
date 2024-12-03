@@ -42,34 +42,42 @@ export const ProjectHeader = () => {
         <Slider settings={settings2}>
           <SwiperSlide >
             <Image
-              src="/images/gerenciador-tarefas/gerenciador-tarefa.png"
+              src="/images/gerenciador-tarefas/gerenciador-tarefa5.png"
               alt="Picture 1"
-              width={400}
+              width={300}
+              height={400}
+            />
+          </SwiperSlide>
+          <SwiperSlide >
+            <Image
+              src="/images/gerenciador-tarefas/gerenciador-tarefa2.png"
+              alt="Picture 2"
+              width={300}
+              height={500}
+            />
+          </SwiperSlide>
+          <SwiperSlide >
+            <Image
+              src="/images/gerenciador-tarefas/gerenciador-tarefa3.png"
+              alt="Picture 3"
+              width={300}
+              height={400}
+            />
+          </SwiperSlide>
+          <SwiperSlide >
+            <Image
+              src="/images/gerenciador-tarefas/gerenciador-tarefa4.png"
+              alt="Picture 4"
+              width={300}
               height={400}
             />
           </SwiperSlide>
           <SwiperSlide >
             <Image
               src="/images/gerenciador-tarefas/gerenciador-tarefa.png"
-              alt="Picture 1"
-              width={400}
-              height={400}
-            />
-          </SwiperSlide>
-          <SwiperSlide >
-            <Image
-              src="/images/gerenciador-tarefas/gerenciador-tarefa.png"
-              alt="Picture 1"
-              width={400}
-              height={400}
-            />
-          </SwiperSlide>
-          <SwiperSlide >
-            <Image
-              src="/images/gerenciador-tarefas/gerenciador-tarefa.png"
-              alt="Picture 1"
-              width={400}
-              height={400}
+              alt="Picture 5"
+              width={500}
+              height={500}
             />
           </SwiperSlide>
         </Slider>
@@ -79,32 +87,40 @@ export const ProjectHeader = () => {
         <Slider settings={settings}>
           <SwiperSlide>
             <Image
-              src="/images/gerenciador-tarefas/gerenciador-tarefa.png"
+              src="/images/gerenciador-tarefas/gerenciador-tarefa5.png"
               alt="Picture 1"
-              width={500}
+              width={300}
+              height={500}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/gerenciador-tarefas/gerenciador-tarefa2.png"
+              alt="Picture 2"
+              width={300}
+              height={500}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/gerenciador-tarefas/gerenciador-tarefa3.png"
+              alt="Picture 3"
+              width={300}
+              height={500}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/images/gerenciador-tarefas/gerenciador-tarefa4.png"
+              alt="Picture 4"
+              width={300}
               height={500}
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               src="/images/gerenciador-tarefas/gerenciador-tarefa.png"
-              alt="Picture 1"
-              width={500}
-              height={500}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src="/images/gerenciador-tarefas/gerenciador-tarefa.png"
-              alt="Picture 1"
-              width={500}
-              height={500}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src="/images/gerenciador-tarefas/gerenciador-tarefa.png"
-              alt="Picture 1"
+              alt="Picture 5"
               width={500}
               height={500}
             />
@@ -114,7 +130,7 @@ export const ProjectHeader = () => {
 
       <div className="flex flex-col gap-2 p-8">
         <h1 className="font-extrabold text-xl">Gerenciador de Tarefas</h1>
-        <p className="text-justify">
+        <p className="text-justify overflow-x-auto">
           O Gerenciador de Tarefas é uma aplicação web desenvolvida para
           organizar e acompanhar suas tarefas de forma prática e eficiente.
           Criado com tecnologias modernas como React, Tailwind CSS, Raunts, e
