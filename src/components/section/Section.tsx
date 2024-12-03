@@ -6,11 +6,11 @@ export const Section = () => {
       <h2 className="font-bold text-xl">My Projects</h2>
 
       <ul className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-        <li>
+        <li className="text-justify">
           <Project
             href="/project/gerenciador-de-tarefas"
             title="Gerenciador de Tarefas"
-            image="/images/gerenciador-tarefa.png"
+            image="/images/gerenciador-tarefas/gerenciador-tarefa.png"
             description="O Gerenciador de Tarefas é uma aplicação web desenvolvida para organizar
         e acompanhar suas tarefas de forma prática e eficiente. Criado com
         tecnologias modernas como React, Tailwind CSS, Raunts, e React Icons, o
