@@ -51,8 +51,8 @@ export default function About() {
       </section>
       <section>
         <p className="text-justify">
-          Eu sou um desenvolvedor Full Stack em construção. Graduação em engenharia 
-          de Produção e com alguns anos de experiência na área, venho solidificando minha
+          Eu sou um desenvolvedor Full Stack em construção. Com graduação em engenharia 
+          de Produção e alguns anos de experiência na área, venho solidificando minha
           transição de carreira para a área de tecnologia, através do curso de Análise e
           Desenvolvimento de Sistemas, que é a minha segunda graduação e está em
           andamento. Meu principal objetivo é aplicar minhas habilidades em gerenciamento
