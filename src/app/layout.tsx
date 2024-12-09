@@ -4,7 +4,7 @@ import { Header } from "@/components/header/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ronney's Portfolio",
+  title: "Contact me",
   description: "Neste portfólio você irá conhecer um pouco mais sobre o Dev Ronney, um programador Full Stack em desenvolvimento.",
   icons: {
     icon: "/images/favicon.ico"
