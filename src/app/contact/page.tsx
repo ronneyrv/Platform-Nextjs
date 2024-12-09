@@ -30,7 +30,7 @@ export default function PageContact() {
       </Link>
 
       <Link
-        href={"https://www.linkedin.com/in/ronney-rocha-6a045466/"}
+        href={"https://linkedin.com/in/ronney-rocha-6a045466/"}
         target="blank"
         className="flex justify-center"
       >
