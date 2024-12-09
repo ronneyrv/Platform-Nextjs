@@ -39,7 +39,7 @@ export default function About() {
             draggable={false}
             className="rounded-full p-2 w-full sm:w-80 md:w-96"
           />
-          <div className="flex-col text-center w-full">
+          <div className="flex-col text-center sm:w-full md:w-4/12">
             <h2 className="font-bold text-center text-2xl sm:text-4xl md:text-5x1 mb-2">
               Ronney Rocha
             </h2>
@@ -60,7 +60,7 @@ export default function About() {
         </p>
       </section>
       <section>
-        <div className="mt-3 mb-40 sm:mt-20">
+        <div className="mt-3 mb-40 sm:mb-0 sm:mt-20">
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={0}
