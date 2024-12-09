@@ -27,9 +27,10 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="flex-col gap-8 p-2 sm:p-8">
-      <section className="flex-col p-8">
-        <article className="flex gap-2 flex-col p-2 m-3 rounded sm:flex-row items-center">
+    <main className="flex-col p-2 sm:p-5
+    ">
+      <section className="flex-col">
+        <article className="flex flex-col mt-8 sm:mt-16 rounded sm:flex-row items-center">
           <Image
             src={"/images/avatar.jpg"}
             alt={"avatar"}
@@ -39,7 +40,7 @@ export default function About() {
             className="rounded-full p-2 w-full sm:w-80 md:w-96"
           />
           <div className="flex-col text-center w-full">
-            <h2 className="font-bold text-center text-xl sm:text-4xl md:text-5x1 mb-2">
+            <h2 className="font-bold text-center text-2xl sm:text-4xl md:text-5x1 mb-2">
               Ronney Rocha
             </h2>
             <div className="flex gap-4 items-center justify-center">
@@ -50,7 +51,7 @@ export default function About() {
         </article>
       </section>
       <section>
-        <p className="text-justify">
+        <p className="text-justify text-base sm:text-lg sm:mt-14 px-3 mt-2">
         Eu sou um desenvolvedor Full Stack em formação, com graduação em Engenharia de Produção e alguns anos de experiência na área. 
         Estou consolidando minha transição para o setor de tecnologia por meio da segunda graduação em Análise e Desenvolvimento de Sistemas, 
         atualmente em andamento. Meu principal objetivo é utilizar minhas habilidades em gestão e resolução de problemas, com foco em eficiência 
@@ -59,7 +60,7 @@ export default function About() {
         </p>
       </section>
       <section>
-        <div className="mt-20">
+        <div className="mt-3 mb-40 sm:mt-20">
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={0}
