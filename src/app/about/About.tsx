@@ -51,14 +51,11 @@ export default function About() {
       </section>
       <section>
         <p className="text-justify">
-          Eu sou um desenvolvedor Full Stack em construção. Com graduação em engenharia 
-          de Produção e alguns anos de experiência na área, venho solidificando minha
-          transição de carreira para a área de tecnologia, através do curso de Análise e
-          Desenvolvimento de Sistemas, que é a minha segunda graduação e está em
-          andamento. Meu principal objetivo é aplicar minhas habilidades em gerenciamento
-          e resolução de problemas com foco em eficiência e resultados para criar soluções
-          que realmente impactem pessoas e negócios. Hoje, sinto-me ainda mais motivado a 
-          explorar, aprender e inovar como desenvolvedor Full Stack.
+        Eu sou um desenvolvedor Full Stack em formação, com graduação em Engenharia de Produção e alguns anos de experiência na área. 
+        Estou consolidando minha transição para o setor de tecnologia por meio da segunda graduação em Análise e Desenvolvimento de Sistemas, 
+        atualmente em andamento. Meu principal objetivo é utilizar minhas habilidades em gestão e resolução de problemas, com foco em eficiência 
+        e resultados, para desenvolver soluções que gerem impacto positivo em pessoas e negócios. Estou cada vez mais motivado a explorar, aprender 
+        e inovar, construindo uma carreira sólida como desenvolvedor Full Stack.
         </p>
       </section>
       <section>
