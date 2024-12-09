@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="flex-col gap-8 p-8">
+    <main className="flex-col gap-8 p-2 sm:p-8">
       <section className="flex-col p-8">
         <article className="flex gap-2 flex-col p-2 m-3 rounded sm:flex-row items-center">
           <Image
@@ -36,15 +36,15 @@ export default function About() {
             width={400}
             height={400}
             draggable={false}
-            className="rounded-full p-2 w-full sm:w-60 md:w-72"
+            className="rounded-full p-2 w-full sm:w-80 md:w-96"
           />
           <div className="flex-col text-center w-full">
-            <h2 className="font-bold text-center text-5xl md:text-5x1 mb-2">
+            <h2 className="font-bold text-center text-xl sm:text-4xl md:text-5x1 mb-2">
               Ronney Rocha
             </h2>
             <div className="flex gap-4 items-center justify-center">
-              <h3 className="text-xl">Full Stack Developer</h3>
-              <FaLaptopCode className="size-8" />
+              <h3 className="sm:text-xl">Full Stack Developer</h3>
+              <FaLaptopCode className=" sm:size-8" />
             </div>
           </div>
         </article>
